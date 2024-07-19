@@ -303,7 +303,7 @@ public class GameMainActivity extends AppCompatActivity {
                         } else {//배드엔딩
                             Intent i = new Intent(GameMainActivity.this, GameScriptActivity.class);
                             i.putExtra("etNameValue", gameEngine.getName());
-                            i.putExtra("etScriptValue", "bad_ending");
+                            i.putExtra("etScriptValue", "_ending");
                             i.putExtra("etScriptIndexValue", "[BADEND]");
                             startActivityForResult(i, Constant.GM_ENDING);
                         }

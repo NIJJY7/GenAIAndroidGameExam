@@ -38,16 +38,16 @@ public class Constant {
 
         public static final int[] START_POINT = {
                 -1,
-                11 - 1,
-                11 + 17 - 1,
-                11 + 17 + 14 - 1,
+                25 - 1,
+                25 + 25 - 1,
+                25 + 25 + 25 - 1,
         };
 
         public static final int[] END_POINT = {
-                11,
-                11 + 17,
-                11 + 17 + 14,
-                11 + 17 + 14 + 6,
+                25,
+                25 + 25,
+                25 + 25 + 25,
+                25 + 25 + 25 + 6,
         };
 
         public static String getEventData(int num) {
