@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.omworldgame.genaiandroidgameexam"
+    namespace = "org.yjjin.lost_heirs"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.omworldgame.genaiandroidgameexam"
+        applicationId = "org.yjjin.lost_heirs"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
