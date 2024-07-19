@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         if (preferences.getBoolean("BGM", true)) {
-            mediaPlayer = MediaPlayer.create(this, R.raw.bgm01_dreaming_together);
+            mediaPlayer = MediaPlayer.create(this, R.raw.bgm01_whispers_of_the_past);
             mediaPlayer.setLooping(true);
             mediaPlayer.start();
         }
@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
     public void onStartGame(View view) {
         Utility.playWaveFromDAT(R.raw.select);
 
+        /*
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.input_name);
 
@@ -98,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
         // create and show the alert dialog
         AlertDialog dialog = builder.create();
         dialog.show();
+        */
+
+        sendDialogDataToActivity("송지훈");
     }
 
     private void sendDialogDataToActivity(String data) {
@@ -141,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
             }
         } else if (requestCode == Constant.GM_CONFIG) {
             if (preferences.getBoolean("BGM", true)) {
-                mediaPlayer = MediaPlayer.create(this, R.raw.bgm01_dreaming_together);
+                mediaPlayer = MediaPlayer.create(this, R.raw.bgm01_whispers_of_the_past);
                 mediaPlayer.setLooping(true);
                 mediaPlayer.start();
             } else {

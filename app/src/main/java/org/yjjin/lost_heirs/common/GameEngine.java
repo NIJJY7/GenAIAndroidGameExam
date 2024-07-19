@@ -13,7 +13,7 @@ public class GameEngine {
 
     public GameEngine() {
         this.name = "강철민";
-        this.curPlace = 3;
+        this.curPlace = 1;
         this.curMonth = 10;
         this.curDay = 1;
 

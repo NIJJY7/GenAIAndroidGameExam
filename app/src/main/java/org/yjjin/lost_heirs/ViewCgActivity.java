@@ -68,13 +68,13 @@ public class ViewCgActivity extends AppCompatActivity {
 
         if (preferences.getBoolean("BGM", true)) {
             if (char_num == 0) {
-                mediaPlayer = MediaPlayer.create(this, R.raw.bgm02_whispered_grace);
+                mediaPlayer = MediaPlayer.create(this, R.raw.bgm02_echoes_of_resolve);
             } else if (char_num == 1) {
-                mediaPlayer = MediaPlayer.create(this, R.raw.bgm03_radiant_dynamo);
+                mediaPlayer = MediaPlayer.create(this, R.raw.bgm03_whispered_reflections);
             } else if (char_num == 2) {
-                mediaPlayer = MediaPlayer.create(this, R.raw.bgm04_radiant_heart);
+                mediaPlayer = MediaPlayer.create(this, R.raw.bgm04_digital_enigma);
             } else if (char_num == 3) {
-                mediaPlayer = MediaPlayer.create(this, R.raw.bgm06_serene_starlight);
+                mediaPlayer = MediaPlayer.create(this, R.raw.bgm06_whispered_reflections_v1);
             }
         }
 

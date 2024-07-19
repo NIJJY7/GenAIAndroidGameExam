@@ -135,7 +135,7 @@ public class GameMainActivity extends AppCompatActivity {
             if (mediaPlayer != null) {
                 mediaPlayer.release();
             }
-            mediaPlayer = MediaPlayer.create(this, R.raw.bgm06_serene_starlight);
+            mediaPlayer = MediaPlayer.create(this, R.raw.bgm06_whispered_reflections_v1);
             mediaPlayer.setLooping(true);
             mediaPlayer.start();
         }
@@ -309,7 +309,7 @@ public class GameMainActivity extends AppCompatActivity {
                         }
                     } else {
                         gameEngine.setCurDay(gameEngine.getCurDay() + 1);
-                        gameEngine.setCurPlace(3);
+                        gameEngine.setCurPlace(1);
                         performMovePlace();
                     }
                 } else {

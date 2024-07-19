@@ -108,15 +108,15 @@ public class GameScriptActivity extends AppCompatActivity {
 
             if (preferences.getBoolean("BGM", true)) {
                 if (scriptFilename.equals("bad_ending") || scriptIndex.equals("[HAPPYEND]")) {
-                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm05_rise_and_shine);
+                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm05_digital_enigma_v1);
                 } else if (scriptFilename.equals("intro") || scriptFilename.equals("common")) {
-                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm06_serene_starlight);
+                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm06_whispered_reflections_v1);
                 } else if (scriptFilename.equals("char1")) {
-                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm02_whispered_grace);
+                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm02_echoes_of_resolve);
                 } else if (scriptFilename.equals("char2")) {
-                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm03_radiant_dynamo);
+                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm03_whispered_reflections);
                 } else if (scriptFilename.equals("char3")) {
-                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm04_radiant_heart);
+                    mediaPlayer = MediaPlayer.create(this, R.raw.bgm04_digital_enigma);
                 }
 
                 if (mediaPlayer != null) {
